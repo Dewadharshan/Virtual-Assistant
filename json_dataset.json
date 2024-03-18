@@ -1,0 +1,593 @@
+{
+  "intents": [
+    {
+      "description": "stop the process",
+      "patterns": [
+        "stop",
+        "stop now",
+        "stop the process",
+        "stop speaking",
+        "stop yelling",
+        "enough",
+        "ok stop",
+        "okay stop"
+      ],
+      "functions": null
+    },
+    {
+      "description": "volume increase",
+      "patterns": [
+        "volume up",
+        "increase the volume",
+        "increase volume",
+        "raise the volume",
+        "set the volume to"
+      ],
+      "functions": "volume(1)"
+    },
+    {
+      "description": "volume decrease",
+      "patterns": [
+        "volume down",
+        "decrease the volume",
+        "reduce the volume",
+        "lower the volume",
+        "set the volume to"
+      ],
+      "functions": "volume(0)"
+    },
+    {
+      "description": "brightness increase",
+      "patterns": [
+        "brightness up",
+        "increase the brightness",
+        "increase brightness",
+        "raise the brightness",
+        "set the brightness to"
+      ],
+      "functions": null
+    },
+    {
+      "description": "brightness decrease",
+      "patterns": [
+        "brightness down",
+        "decrease the brightness",
+        "reduce the brightness",
+        "lower the brightness",
+        "set the brightness to"
+      ],
+      "functions": null
+    },
+    {
+      "description": "mute the volume",
+      "patterns": [
+        "mute the volume",
+        "mute volume",
+        "volume mute",
+        "mute the sound",
+        "muting the volume"
+      ],
+      "functions": "mute_volume()"
+    },
+    {
+      "description": "keep as sleep mode",
+      "patterns": [
+        "sleep",
+        "put the computer to sleep",
+        "turn on sleep",
+        "sleep the computer",
+        "put the laptop to sleep"
+      ],
+      "functions": "sleep_computer()"
+    },
+    {
+      "description": "shut down",
+      "patterns": [
+        "shutdown",
+        "shutdown the computer",
+        "shutdown yourself",
+        "turn off yourself",
+        "turn off",
+        "shutdoen the laptop"
+      ],
+      "functions": "shutdown_computer()"
+    },
+    {
+      "description": "restart",
+      "patterns": [
+        "restart",
+        "restart the computer",
+        "restart yourself",
+        "restart the laptop",
+        "put computer to restart"
+      ],
+      "functions": "restart_computer()"
+    },
+    {
+      "description": "keep as hibernate",
+      "patterns": [
+        "hibernate",
+        "hibernate the computer",
+        "hibernate the laptop"
+      ],
+      "functions": "hibernate_computer()"
+    },
+    {
+      "description": "turn on wifi",
+      "patterns": [
+        "turn on the wifi",
+        "turn on wifi",
+        "wifi on"
+      ],
+      "functions": "wifi_on_and_off(1)"
+    },
+    {
+      "description": "turn off wifi",
+      "patterns": [
+        "turn off the wifi",
+        "turn off wifi",
+        "wifi off"
+      ],
+      "functions": "wifi_on_and_off(0)"
+    },
+    {
+      "description": "turn on hotspot",
+      "patterns": [
+        "turn on the hotspot",
+        "turn on mobile hotspot",
+        "on mobile hotspot",
+        "on hotspot",
+        "hotspot on"
+      ],
+      "functions": "mobile_hotspot(1)"
+    },
+    {
+      "description": "turn off hotspot",
+      "patterns": [
+        "turn off the hotspot",
+        "turn off mobile hotspot",
+        "off mobile hotspot",
+        "off hotspot",
+        "hotspot off"
+      ],
+      "functions": "mobile_hotspot(0)"
+    },
+    {
+      "description": "turn on Bluetooth",
+      "patterns": [
+        "turn on the bluetooth",
+        "turn on mobile bluetooth",
+        "on mobile bluetooth",
+        "on bluetooth",
+        "bluetooth on"
+      ],
+      "functions": "bluetooth(1)"
+    },
+    {
+      "description": "turn off Bluetooth",
+      "patterns": [
+        "turn off the bluetooth",
+        "turn off mobile bluetooth",
+        "off mobile bluetooth",
+        "off bluetooth",
+        "bluetooth off"
+      ],
+      "functions": "bluetooth(0)"
+    },
+    {
+      "description": "minimising",
+      "patterns": [
+        "minimise",
+        "minimize",
+        "minimize the window",
+        "minimise the tab",
+        "minimize the current window"
+      ],
+      "functions": null
+    },
+    {
+      "description": "minimise all tab",
+      "patterns": [
+        "minimize all window",
+        "minimize all the tab",
+        "minimize all the window",
+        "all window minimize",
+        "minimise all window",
+        "minimise all the tab",
+        "minimise all the window",
+        "all window minimise"
+      ],
+      "functions": "show_desktop()"
+    },
+    {
+      "description": "maximising",
+      "patterns": [
+        "maximize",
+        "maximize the window",
+        "maximize current the window",
+        "maximize the tab",
+        "minimize the current window"
+      ],
+      "functions": null
+    },
+
+    {
+      "description": "refresh",
+      "patterns": [
+        "refresh",
+        "refresh the page",
+        "refresh the window",
+        "reload",
+        "reload the page",
+        "reload the window",
+        "refresh page",
+        "reload page"
+      ],
+      "functions": "refresh()"
+    },
+    {
+      "description": "close the current tab",
+      "patterns": [
+        "close the current tab",
+        "close current tab",
+        "close current",
+        "close this tab"
+      ],
+      "functions": "close_current_tab()"
+    },
+    {
+      "description": "scroll down",
+      "patterns": [
+        "scroll",
+        "scroll down",
+        "down scroll",
+        "scroll that down"
+      ],
+      "functions": "scroll_down()"
+    },
+    {
+      "description": "scroll up",
+      "patterns": [
+        "scroll up",
+        "scroll that up",
+        "up scroll"
+      ],
+      "functions": "scroll_up()"
+    },
+    {
+      "description": "zoom in",
+      "patterns": [
+        "zoom",
+        "zoom in",
+        "zoom that in"
+      ],
+      "functions": "zoom_in()"
+    },
+    {
+      "description": "zoom out",
+      "patterns": [
+        "zoom out",
+        "zoom that out",
+        "zoom out that"
+      ],
+      "functions": "zoom_out()"
+    },
+    {
+      "description": "take a photo",
+      "patterns": [
+        "take a photo",
+        "take me a photo",
+        "take a photo of that",
+        "capture that",
+        "capture me"
+      ],
+      "functions": "take_photo()"
+    },
+    {
+      "description": "record video",
+      "patterns": [
+        "record",
+        "record this ",
+        "take a video",
+        "record me as a video",
+        "record this as video",
+        "capture a video"
+      ],
+      "functions": "record_video()"
+    },
+    {
+      "description": "weather",
+      "patterns": [
+      ],
+      "functions": null
+    },
+    {
+      "description": "turn on batterysaver",
+      "patterns": [
+        "turn on battery saver",
+        "battery saver",
+        "battery saver on"
+      ],
+      "functions": "battery_saver(1)"
+    },
+    {
+      "description": "turn off batterysaver",
+      "patterns": [
+        "turn off battery saver",
+        "off the battery saver",
+        "battery saver off"
+      ],
+      "functions": "battery_saver(0)"
+    },
+    {
+      "description": "turn on performance",
+      "patterns": [
+        "turn on performance mode",
+        "on performance mode",
+        "turn on performance"
+      ],
+      "functions": null
+    },
+    {
+      "description": "turn off performance",
+      "patterns": [
+        "turn off performance mode",
+        "off performance mode",
+        "turn off performance"
+      ],
+      "functions": null
+    },
+    {
+      "description": "screenshot",
+      "patterns": [
+        "take a screenshot",
+        "capture the screen",
+        "screenshot",
+        "screenshot this"
+      ],
+      "functions": "take_screenshot()"
+    },
+    {
+      "description": "screen record",
+      "patterns": [
+        "record the screen",
+        "record screen",
+        "screen record"
+      ],
+      "functions": null
+    },
+    {
+      "description": "undo/come backward",
+      "patterns": [
+        "undo",
+        "undo that",
+        "comeback",
+        "okay comeback",
+        "okay undo that",
+        "stop undo that"
+      ],
+      "functions": "undo()"
+    },
+    {
+      "description": "redo/come frontwaed",
+      "patterns": [
+        "redo",
+        "redo that"
+      ],
+      "functions": "redo()"
+    },
+    {
+      "description": "time",
+      "patterns": [
+        "what is the time now",
+        "tell me the time",
+        "what the time",
+        "time"
+      ],
+      "functions": "get_date_and_time(time=True)"
+    },
+    {
+      "description": "date",
+      "patterns": [
+        "what is today's date",
+        "tell me the date",
+        "date"
+      ],
+      "functions": "get_date_and_time(date=True)"
+    },
+    {
+      "description": "time and date",
+      "patterns": [
+        "what is the time and date",
+        "time and date",
+        "time and date today",
+        "what is the date and time now",
+        "what is the date and time "
+      ],
+      "functions": "get_date_and_time(date_time=True)"
+    },
+    {
+      "description": "turn on darkmode",
+      "patterns": [
+      ],
+      "functions": null
+    },
+    {
+      "description": "turn off darkmode",
+      "patterns": [
+      ],
+      "functions": null
+    },
+    {
+      "description": "turn on airplane mode",
+      "patterns": [
+        "turn on airplane mode",
+        "airplane mode",
+        "airoplane mode",
+        "airplane mode on",
+        "airoplane mode on"
+      ],
+      "functions": "airplane_mode(1)"
+    },
+    {
+      "description": "turn off airplane mode",
+      "patterns": [
+        "turn off airplane mode",
+        "airplane mode off",
+        "airoplane mode off"
+      ],
+      "functions": "airplane_mode(0)"
+    },
+    {
+      "description": "turn on location",
+      "patterns": [
+      ],
+      "functions": null
+    },
+    {
+      "description": "turn off",
+      "patterns": [
+      ],
+      "functions": null
+    },
+    {
+      "description": "new folder",
+      "patterns": [
+      ],
+      "functions": null
+    },
+    {
+      "description": "come to desktop",
+      "patterns": [
+        "come to the desktop",
+        "desktop",
+        "show desktop",
+        "peek to desktop",
+        "peak to tesktop"
+      ],
+      "functions": "show_desktop()"
+    },
+    {
+      "description": "right click",
+      "patterns": [
+        "right click",
+        "click right button on the mouse",
+        "click right button",
+        "click on the right key"
+      ],
+      "functions": "mouse_right_click()"
+    },
+    {
+      "description": "left click",
+      "patterns": [
+        "left click",
+        "click left button on the mouse",
+        "click left button",
+        "click on the left key"
+      ],
+      "functions": "mouse_left_click()"
+    },
+    {
+      "description": "turn on microphone",
+      "patterns": [
+      ],
+      "functions": null
+    },
+    {
+      "description": "introduction",
+      "patterns": [
+        "ok introduce yourself",
+        "hey introduce yourself",
+        "introduce yourself",
+        "hello introduce yourself",
+        "introduce you",
+        "give intro of you"
+      ],
+      "functions": "introduction()"
+    },
+    {
+      "description": "open chrome",
+      "patterns": [
+        "open chrome",
+        "open google chrome",
+        "google chrome"
+      ],
+      "functions": "open_chrome()"
+    },
+    {
+      "description": "open youtube",
+      "patterns": [
+        "open youtube",
+        "go to youtube",
+        "proceed to youtube",
+        "go to youtube com"
+      ],
+      "functions": "open_youtube()"
+    },
+    {
+      "description": "click first video",
+      "patterns": [
+        "click on the first video",
+        "first video",
+        "open the first video",
+        "go to first video",
+        "1"
+      ],
+      "functions": "play_video_by_count(1)"
+    },
+    {
+      "description": "click_second_video",
+      "patterns": [
+        "click on the second video",
+        "second video",
+        "open the second video",
+        "go to second video",
+        "2"
+      ],
+      "functions": "play_video_by_count(2)"
+    },
+    {
+      "description": "click_third_video",
+      "patterns": [
+        "click on the third video",
+        "third video",
+        "open the third video",
+        "go to third video",
+        "3"
+      ],
+      "functions": "play_video_by_count(3)"
+    },
+    {
+      "description": "click_fourth_video",
+      "patterns": [
+        "click on the fourth video",
+        "fourth video",
+        "open the fourth video",
+        "go to fourth video",
+        "4"
+      ],
+      "functions": "play_video_by_count(4)"
+    },
+    {
+      "description": "pause/play",
+      "patterns": [
+        "ok pause",
+        "pause the video",
+        "play video",
+        "play"
+      ],
+      "functions": "pause_play()"
+    },
+    {
+      "description": "login to tel",
+      "patterns": [
+        "login to my college website",
+        "login to my tel curricula",
+        "login to my college portal",
+        "go to my college portal"
+      ],
+      "functions": "login_to_tel()"
+    }
+  ]
+  
+}
